@@ -26,40 +26,7 @@ This is an end-to-end machine learning project built to solve two real-world bus
 
 ## 🗂️ Project Architecture
 
-```
-Vendor Invoice Intelligence System
-│
-├── Business Problem
-│   └── Invoice Cost Leakage & Audit Risk
-│
-├── Data Sources (SQLite - inventory.db)
-│   ├── vendor_invoice   → Invoice-level financial & timing data
-│   ├── purchases        → Item-level purchase details
-│   ├── purchase_prices  → Reference purchase prices
-│   └── inventory tables → Inventory snapshots
-│
-├── SQL Feature Engineering
-│   └── Invoice-Level Aggregations via CTEs
-│
-├── EDA & Analysis
-│   ├── Cost Patterns
-│   ├── Risk Behavior
-│   └── T-Tests (statistical significance)
-│
-├── Modeling
-│   ├── Freight Cost Prediction → Regression Models
-│   └── Invoice Risk Flagging  → Classification Models
-│
-├── Model Evaluation
-│   ├── Regression  : MAE | RMSE | R²
-│   └── Classification : Precision | Recall | F1-Score
-│
-├── Model Deployment
-│   └── .pkl Files (joblib)
-│
-└── Streamlit Application
-    └── Real-Time Insights & Alerts
-```
+![Architecture Diagram](assets/architecture.png)
 
 ---
 
@@ -106,38 +73,7 @@ Vendor Invoice Intelligence System
 
 ---
 
-## 🗃️ Project Structure
 
-```
-Inventory Analysis Project/
-├── app.py                          ← Streamlit web app
-├── requirements.txt                ← Python dependencies
-├── .gitignore
-│
-├── inference/                      ← Prediction modules
-│   ├── predict_freight.py          ← Freight cost inference
-│   └── predict_invoice_flag.py     ← Invoice flag inference
-│
-├── invoice_flagging/               ← Invoice classification pipeline
-│   ├── data_preprocessing.py
-│   ├── model_evaluation.py
-│   └── train.py
-│
-├── freight_cost_prediction/        ← Freight regression pipeline
-│   ├── data_preprocessing.py
-│   ├── model_evaluation.py
-│   └── train.py
-│
-├── models/                         ← Saved .pkl model files
-│   ├── random_forest.pkl
-│   ├── predict_freight_model.pkl
-│   └── scaler.pkl
-│
-├── data/                           ← Database (not included, see below)
-│   └── inventory.db
-│
-└── notebooks/                      ← Jupyter exploration notebooks
-```
 
 ---
 
