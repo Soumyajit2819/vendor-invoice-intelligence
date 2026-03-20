@@ -1,0 +1,4 @@
+__pycache__/
+*.pyc
+data/inventory.db
+.ipynb_checkpoints/
