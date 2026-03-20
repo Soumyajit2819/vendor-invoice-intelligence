@@ -6,6 +6,8 @@
 [![scikit-learn](https://img.shields.io/badge/scikit--learn-1.0+-orange.svg)](https://scikit-learn.org/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
+> ⭐ If you found this project useful, please give it a star!
+
 ---
 
 ## 🚀 Live Demo
@@ -73,7 +75,42 @@ This is an end-to-end machine learning project built to solve two real-world bus
 
 ---
 
+## 🗃️ Project Structure
 
+```
+vendor-invoice-intelligence/
+│
+├── app.py                          ← Streamlit web app (entry point)
+├── requirements.txt                ← Python dependencies
+├── .gitignore
+│
+├── assets/                         ← Images & diagrams for README
+│   └── architecture.svg
+│
+├── inference/                      ← Run predictions on new data
+│   ├── predict_freight.py          ← Freight cost inference
+│   └── predict_invoice_flag.py     ← Invoice risk inference
+│
+├── invoice_flagging/               ← Invoice risk classification pipeline
+│   ├── data_preprocessing.py       ← SQL loading, labeling, scaling
+│   ├── model_evaluation.py         ← Training & evaluation functions
+│   └── train.py                    ← Main training script
+│
+├── freight_cost_prediction/        ← Freight cost regression pipeline
+│   ├── data_preprocessing.py       ← SQL loading, feature prep
+│   ├── model_evaluation.py         ← Training & evaluation functions
+│   └── train.py                    ← Main training script
+│
+├── models/                         ← Serialized trained models
+│   ├── random_forest.pkl           ← Invoice flagging model
+│   ├── predict_freight_model.pkl   ← Freight prediction model
+│   └── scaler.pkl                  ← Feature scaler
+│
+├── data/                           ← Database (not included, 404MB)
+│   └── inventory.db
+│
+└── notebooks/                      ← EDA & experimentation notebooks
+```
 
 ---
 
@@ -113,8 +150,6 @@ streamlit run app.py
 
 The full `inventory.db` database is not included in this repo due to file size (404MB).
 
-The database contains:
-
 | Table | Description |
 |---|---|
 | `vendor_invoice` | Invoice-level financial and timing data |
@@ -151,12 +186,3 @@ Statistical **t-tests** confirmed that flagged invoices differ meaningfully from
 | Streamlit Cloud | Deployment |
 
 ---
-
-## 👤 Author
-
-**Soumyajit**
-- GitHub: [@Soumyajit2819](https://github.com/Soumyajit2819)
-
----
-
-## ⭐ If you found this project useful, please give it a star!
