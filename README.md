@@ -26,7 +26,7 @@ This is an end-to-end machine learning project built to solve two real-world bus
 
 ## 🗂️ Project Architecture
 
-![Architecture Diagram](assets/architecture.png)
+![Architecture Diagram](assets/architecture.svg)
 
 ---
 
