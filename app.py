@@ -75,9 +75,9 @@ to support budgeting, forecasting, and vendor negotiations.
 
     if submit_freight:
         input_data = {
-            "Quantity": [quantity],
-            "Dollars":  [dollars]
-        }
+    "invoice_quantity": [quantity],
+    "invoice_dollars":  [dollars]
+}
 
         prediction = predict_freight_cost(input_data)['Predicted_Freight']
 

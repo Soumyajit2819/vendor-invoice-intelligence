@@ -37,7 +37,8 @@ if __name__ == "__main__":
 
     # Example inference run (local testing)
     sample_data = {
-        "Dollars": [18500, 9000, 3000,200]
-    }
+    "invoice_quantity": [1200],
+    "invoice_dollars":  [18500.0]
+}
     prediction = predict_freight_cost(sample_data)
     print(prediction)
