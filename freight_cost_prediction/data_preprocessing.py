@@ -26,10 +26,11 @@ def prepare_features(df):
     """
     Select features and target variable
     """
-    X = df[['Dollars']]   # only Dollars
+    X = df[['Quantity', 'Dollars']]
     y = df['Freight']
-    
     return X, y
+    
+    
 
 
 # 3️⃣ Train-Test Split
