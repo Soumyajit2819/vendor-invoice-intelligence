@@ -1,9 +1,0 @@
-pip3 freeze > requirements.txt
-```
-Or manually create it with just what you need:
-```
-streamlit
-pandas
-numpy
-scikit-learn
-joblib
