@@ -6,53 +6,52 @@
 [![scikit-learn](https://img.shields.io/badge/scikit--learn-1.0+-orange.svg)](https://scikit-learn.org/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-> ⭐ If you found this project useful, please give it a star!
 
 ---
 
-## 🚀 Live Demo
-👉 **[Click here to open the app](https://soumyajit2819-vendor-invoice-intelligence-app-pwvd05.streamlit.app/)**
+##  Live Demo
+ **[Click here to open the app](https://soumyajit2819-vendor-invoice-intelligence-app-pwvd05.streamlit.app/)**
 
 ---
 
-## 📌 Project Overview
+##  Project Overview
 
 This is an end-to-end machine learning project built to solve two real-world business problems in supply chain finance:
 
 | Problem | Solution |
 |---|---|
-| 💸 Freight cost overruns & vendor overcharging | **Freight Cost Prediction** using Random Forest Regressor |
-| 🚨 Risky or fraudulent vendor invoices going undetected | **Invoice Risk Flagging** using Random Forest Classifier |
+|  Freight cost overruns & vendor overcharging | **Freight Cost Prediction** using Random Forest Regressor |
+|  Risky or fraudulent vendor invoices going undetected | **Invoice Risk Flagging** using Random Forest Classifier |
 
 ---
 
-## 🗂️ Project Architecture
+##  Project Architecture
 
 ![Architecture Diagram](assets/architecture.svg)
 
 ---
 
-## 🧠 Models Used
+##  Models Used
 
-### 📦 Freight Cost Prediction (Regression)
+###  Freight Cost Prediction (Regression)
 | Model | Purpose |
 |---|---|
 | Linear Regression | Baseline |
 | Decision Tree Regressor | Intermediate |
-| **Random Forest Regressor** | ✅ Final Model |
+| **Random Forest Regressor** |  Final Model |
 
-### 🚨 Invoice Risk Flagging (Classification)
+###  Invoice Risk Flagging (Classification)
 | Model | Accuracy | Flagged F1 |
 |---|---|---|
-| Logistic Regression | 65% | 0.00 ❌ |
-| Decision Tree | 95% | 0.92 ✅ |
-| **Random Forest + GridSearchCV** | **96%** | **0.93** ✅ |
+| Logistic Regression | 65% | 0.00  |
+| Decision Tree | 95% | 0.92  |
+| **Random Forest + GridSearchCV** | **96%** | **0.93**  |
 
 > Hyperparameter tuning performed using **GridSearchCV** with **F1-score** to handle class imbalance.
 
 ---
 
-## 📊 Evaluation Metrics
+##  Evaluation Metrics
 
 ### Invoice Risk Flagging — Random Forest (Best Model)
 ```
@@ -75,7 +74,7 @@ This is an end-to-end machine learning project built to solve two real-world bus
 
 ---
 
-## 🗃️ Project Structure
+##  Project Structure
 
 ```
 vendor-invoice-intelligence/
@@ -114,7 +113,7 @@ vendor-invoice-intelligence/
 
 ---
 
-## ⚙️ How to Run Locally
+##  How to Run Locally
 
 ### 1. Clone the repo
 ```bash
@@ -146,7 +145,7 @@ streamlit run app.py
 
 ---
 
-## 📁 Data
+##  Data
 
 The full `inventory.db` database is not included in this repo due to file size (404MB).
 
@@ -161,7 +160,7 @@ The full `inventory.db` database is not included in this repo due to file size (
 
 ---
 
-## 🔍 Exploratory Data Analysis
+##  Exploratory Data Analysis
 
 EDA focused on business-driven questions:
 - Do flagged invoices have higher financial exposure?
@@ -172,7 +171,7 @@ Statistical **t-tests** confirmed that flagged invoices differ meaningfully from
 
 ---
 
-## 🛠️ Tech Stack
+##  Tech Stack
 
 | Tool | Usage |
 |---|---|
